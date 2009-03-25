@@ -21,3 +21,6 @@
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
 (scroll-bar-mode nil)
+
+;; enable ido mode
+(ido-mode)
