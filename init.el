@@ -29,6 +29,7 @@
 (load "config/jabber")
 (load "config/org")
 (load "config/twitter")
+(load "config/javascript")
 
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/snippets")
