@@ -2,7 +2,7 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 (prefer-coding-system 'utf-8)
-(setq vc-handled-backends nil)
+(setq vc-handled-backends (quote (SVN)))
 (cua-mode nil)
 (setq gist-view-gist t)
 (setq inhibit-startup-message t)
