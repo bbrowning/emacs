@@ -1,0 +1,10 @@
+;;; Create some handy oracle functions (courtesy @jcrossley)
+(defmacro def-oracle (name connect-string)
+  (let* ((buf-name (concat "oracle-" (symbol-name name)))
+         (fun-name (intern buf-name)))
+    `(defun ,fun-name () 
+       (interactive)
+       (sqlplus ,connect-string ,buf-name))))
+
+(when (file-exists-p "~/.emacs.d/.oracle_connections") (load "~/.emacs.d/.oracle_connections"))
+(setq sqlplus-history-dir "~/.sqlplus-history")
