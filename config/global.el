@@ -4,6 +4,7 @@
 (prefer-coding-system 'utf-8)
 (setq vc-handled-backends (quote (SVN)))
 (cua-mode 0)
+(transient-mark-mode 1)
 (setq gist-view-gist t)
 (setq inhibit-startup-message t)
 (fset 'yes-or-no-p 'y-or-n-p)
