@@ -14,7 +14,7 @@
 ;;(vendor 'cheat)
 (vendor 'magit)
 (vendor 'gist)
-(vendor 'twittering-mode)
+;;(vendor 'twittering-mode)
 (vendor 'textile-mode)
 ;;(vendor 'textmate)
 (vendor 'color-theme)
@@ -29,7 +29,7 @@
 (load "config/theme")
 ;;(load "config/jabber")
 (load "config/org")
-(load "config/twitter")
+;;(load "config/twitter")
 (load "config/javascript")
 (load "config/sqlplus")
 
