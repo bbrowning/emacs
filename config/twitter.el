@@ -3,7 +3,7 @@
 
                                    (set-face-foreground 'twittering-username-face "Limegreen")
                                    (set-face-foreground 'twittering-uri-face "OrangeRed1")
-                                   (set-face-foreground 'twittering-time-face "grey")
-                                   (setq twittering-status-format "%s\n%t\n%@")
+                                   ;(set-face-foreground 'twittering-time-face "grey")
+                                   (setq twittering-status-format "%s \n %t \n %@")
 
 ))
