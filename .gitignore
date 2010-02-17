@@ -1,5 +1,7 @@
 *~
 .passwords
+.oracle_connections
 .DS_Store
 config/custom.el
 *.elc
+url/cookies
