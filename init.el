@@ -25,6 +25,7 @@
 (vendor 'rhtml-mode)
 ;;(textmate-mode)
 (vendor 'sqlplus)
+(vendor 'haml-mode)
 
 (load "config/theme")
 ;;(load "config/jabber")
