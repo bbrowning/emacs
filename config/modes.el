@@ -14,3 +14,6 @@
 
 ; sass-mode for .scss files
 (add-to-list 'auto-mode-alist '("\\.scss$" . sass-mode))
+
+; yaml-mode
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))

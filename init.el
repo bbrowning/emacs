@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
+(require 'cl)
 
 ; custom place to save customizations
 (setq custom-file "~/.emacs.d/config/custom.el")
@@ -27,6 +28,7 @@
 (vendor 'sqlplus)
 (vendor 'haml-mode)
 (vendor 'sass-mode)
+(vendor 'yaml-mode)
 
 (load "config/theme")
 ;;(load "config/jabber")
