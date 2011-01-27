@@ -29,6 +29,9 @@
 ;; enable column-number mode
 (column-number-mode)
 
+;; enable delete-selection mode
+(delete-selection-mode)
+
 ;; PATH hack to make Emacs respect .bashrc - from jcrossley
 ;; Setup PATH
 (setenv "PATH" (shell-command-to-string "source ~/.bashrc; echo -n $PATH"))
