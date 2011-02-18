@@ -29,6 +29,7 @@
 (vendor 'haml-mode)
 (vendor 'sass-mode)
 (vendor 'yaml-mode)
+(vendor 'erlang)
 
 (load "config/theme")
 ;;(load "config/jabber")
