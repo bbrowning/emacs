@@ -17,3 +17,6 @@
 
 ; yaml-mode
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+; erlang-mode
+(add-to-list 'auto-mode-alist '("\\.erl$" . erlang-mode))
