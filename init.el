@@ -25,7 +25,8 @@
 (vendor 'ruby-hacks)
 (vendor 'rhtml-mode)
 ;;(textmate-mode)
-(vendor 'sqlplus)
+; Temporarily disable sqlplus because is breaks --daemon
+;;(vendor 'sqlplus)
 (vendor 'haml-mode)
 (vendor 'sass-mode)
 (vendor 'yaml-mode)
