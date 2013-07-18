@@ -1,6 +1,7 @@
 ;; Swiped from defunkt's emacs config http://github.com/defunkt/emacs
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
+(setq confirm-kill-emacs 'y-or-n-p)
 (prefer-coding-system 'utf-8)
 (setq vc-handled-backends (quote (SVN)))
 (cua-mode 0)
@@ -21,7 +22,8 @@
 ;; works in both aquamacs and carbon
 (when (functionp 'tool-bar-mode)
   (tool-bar-mode -1))
-(scroll-bar-mode nil)
+(when (functionp 'scroll-bar-mode)
+  (scroll-bar-mode nil))
 
 ;; enable ido mode
 (ido-mode)
