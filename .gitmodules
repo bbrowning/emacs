@@ -1,18 +1,18 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
-	url = git://github.com/eschulte/rinari.git
+	url = https://github.com/eschulte/rinari.git
 [submodule "vendor/twilight-emacs"]
 	path = vendor/twilight-emacs
-	url = git://github.com/crafterm/twilight-emacs.git
+	url = https://github.com/crafterm/twilight-emacs.git
 [submodule "vendor/cheat"]
 	path = vendor/cheat
-	url = git://github.com/defunkt/cheat.el.git
+	url = https://github.com/defunkt/cheat.el.git
 [submodule "vendor/gist"]
 	path = vendor/gist
-  url = git://github.com/mcfunley/gist.el.git
+        url = https://github.com/mcfunley/gist.el.git
 [submodule "vendor/textmate"]
 	path = vendor/textmate
-	url = git://github.com/defunkt/textmate.el.git
+	url = https://github.com/defunkt/textmate.el.git
 [submodule "vendor/rhtml-mode"]
 	path = vendor/rhtml-mode
-	url = git://github.com/eschulte/rhtml.git
+	url = https://github.com/eschulte/rhtml.git
