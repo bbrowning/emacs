@@ -2,6 +2,7 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 (setq confirm-kill-emacs 'y-or-n-p)
+(setq visible-bell t)
 (prefer-coding-system 'utf-8)
 (setq vc-handled-backends (quote (SVN)))
 (cua-mode 0)
