@@ -5,3 +5,4 @@
 config/custom.el
 *.elc
 url/cookies
+elpa/
