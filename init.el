@@ -42,10 +42,17 @@
 ;;(yas/initialize)
 ;;(yas/load-directory "~/.emacs.d/snippets")
 
+;; Marmalade package repo
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
+
+;; clojure-mode and paredit
 (unless (package-installed-p 'clojure-mode)
   (package-refresh-contents)
   (package-install 'clojure-mode))
+(unless (package-installed-p 'paredit)
+  (package-refresh-contents)
+  (package-install 'paredit))
+(add-hook 'clojure-mode-hook 'paredit-mode)
