@@ -7,10 +7,10 @@
 
 (when (file-exists-p "~/.emacs.d/.passwords") (load "~/.emacs.d/.passwords"))
 
-(load "config/global")
-(load "config/functions")
-(load "config/modes")
-;;(load "config/git")
+(load "~/.emacs.d/config/global")
+(load "~/.emacs.d/config/functions")
+(load "~/.emacs.d/config/modes")
+;;(load "~/.emacs.d/config/git")
 
 ;;(vendor 'cheat)
 (vendor 'magit)
@@ -32,12 +32,12 @@
 (vendor 'yaml-mode)
 (vendor 'erlang)
 
-(load "config/theme")
-;;(load "config/jabber")
-(load "config/org")
-;;(load "config/twitter")
-(load "config/javascript")
-(load "config/sqlplus")
+(load "~/.emacs.d/config/theme")
+;;(load "~/.emacs.d/config/jabber")
+(load "~/.emacs.d/config/org")
+;;(load "~/.emacs.d/config/twitter")
+(load "~/.emacs.d/config/javascript")
+(load "~/.emacs.d/config/sqlplus")
 
 ;;(yas/initialize)
 ;;(yas/load-directory "~/.emacs.d/snippets")

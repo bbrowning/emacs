@@ -16,9 +16,8 @@ Clone this repo into `~/.emacs.d` then:
     git submodule update
 
 
-Finally, create a file called `~/.emacs` and place the following two lines in it:
+Finally, create a file called `~/.emacs` and place the following line in it:
 
-    (add-to-list 'load-path "~/.emacs.d")
     (load "~/.emacs.d/init.el")
 
 You can put local configurations in config/custom.el. Any passwords
