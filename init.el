@@ -31,6 +31,7 @@
 (vendor 'sass-mode)
 (vendor 'yaml-mode)
 (vendor 'erlang)
+(vendor 'rust-mode)
 
 (load "~/.emacs.d/config/theme")
 ;;(load "~/.emacs.d/config/jabber")
@@ -38,6 +39,7 @@
 ;;(load "~/.emacs.d/config/twitter")
 (load "~/.emacs.d/config/javascript")
 (load "~/.emacs.d/config/sqlplus")
+(load "~/.emacs.d/config/rust")
 
 ;;(yas/initialize)
 ;;(yas/load-directory "~/.emacs.d/snippets")

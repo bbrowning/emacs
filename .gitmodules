@@ -16,3 +16,6 @@
 [submodule "vendor/rhtml-mode"]
 	path = vendor/rhtml-mode
 	url = https://github.com/eschulte/rhtml.git
+[submodule "vendor/rust-mode"]
+	path = vendor/rust-mode
+	url = https://github.com/rust-lang/rust-mode.git
