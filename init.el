@@ -46,8 +46,10 @@
 
 ;; Marmalade package repo
 (require 'package)
+;; (add-to-list 'package-archives
+;;              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 ;; clojure-mode and paredit
@@ -58,3 +60,9 @@
   (package-refresh-contents)
   (package-install 'paredit))
 (add-hook 'clojure-mode-hook 'paredit-mode)
+
+
+;; go-mode
+(unless (package-installed-p 'go-mode)
+  (package-refresh-contents)
+  (package-install 'go-mode))
