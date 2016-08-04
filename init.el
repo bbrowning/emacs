@@ -66,3 +66,4 @@
 (unless (package-installed-p 'go-mode)
   (package-refresh-contents)
   (package-install 'go-mode))
+(load "~/.emacs.d/config/golang")
