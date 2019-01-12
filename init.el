@@ -66,4 +66,19 @@
 (unless (package-installed-p 'go-mode)
   (package-refresh-contents)
   (package-install 'go-mode))
+(unless (package-installed-p 'go-autocomplete)
+  (package-refresh-contents)
+  (package-install 'go-autocomplete))
 (load "~/.emacs.d/config/golang")
+
+;; flycheck
+(unless (package-installed-p 'flycheck)
+  (package-refresh-contents)
+  (package-install 'flycheck))
+(global-flycheck-mode)
+
+;; markdown-mode
+(unless (package-installed-p 'markdown-mode)
+  (package-refresh-contents)
+  (package-install 'markdown-mode))
+(setq markdown-command "marked")
