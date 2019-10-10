@@ -12,6 +12,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; do not make backup files
 (setq make-backup-files nil)
+
 (display-time)
 
 (setq ido-case-fold  t)

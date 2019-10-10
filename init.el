@@ -77,8 +77,20 @@
   (package-install 'flycheck))
 (global-flycheck-mode)
 
+;; workaround for outdated go support in flycheck
+;; remove once https://github.com/flycheck/flycheck/pull/1525 released to stable
+(let ((govet (flycheck-checker-get 'go-vet 'command)))
+  (when (equal (cadr govet) "tool")
+    (setf (cdr govet) (cddr govet))))
+
 ;; markdown-mode
 (unless (package-installed-p 'markdown-mode)
   (package-refresh-contents)
   (package-install 'markdown-mode))
 (setq markdown-command "marked")
+
+
+;; csharp-mode
+(unless (package-installed-p 'csharp-mode)
+  (package-refresh-contents)
+  (package-install 'csharp-mode))
