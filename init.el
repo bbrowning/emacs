@@ -22,15 +22,15 @@
 (vendor 'vivid-chalk) 
 ;;(vendor 'jabber)
 ;;(vendor 'yasnippet)
-(vendor 'ruby-hacks)
-(vendor 'rhtml-mode)
+;(vendor 'ruby-hacks)
+;(vendor 'rhtml-mode)
 ;;(textmate-mode)
 ; Temporarily disable sqlplus because is breaks --daemon
 ;;(vendor 'sqlplus)
 (vendor 'haml-mode)
 (vendor 'sass-mode)
 (vendor 'yaml-mode)
-(vendor 'erlang)
+;(vendor 'erlang)
 (vendor 'rust-mode)
 
 (load "~/.emacs.d/config/theme")
@@ -96,3 +96,9 @@
 (unless (package-installed-p 'csharp-mode)
   (package-refresh-contents)
   (package-install 'csharp-mode))
+
+
+;; ugh electric indents
+;(electric-indent-mode -1) ; globally
+;; or
+(add-hook 'org-mode-hook (electric-indent-local-mode -1))
