@@ -13,7 +13,6 @@
 ;;(load "~/.emacs.d/config/git")
 
 ;;(vendor 'cheat)
-(vendor 'magit)
 (vendor 'gist)
 ;;(vendor 'twittering-mode)
 (vendor 'textile-mode)
@@ -22,13 +21,9 @@
 (vendor 'vivid-chalk) 
 ;;(vendor 'jabber)
 ;;(vendor 'yasnippet)
-;(vendor 'ruby-hacks)
-;(vendor 'rhtml-mode)
 ;;(textmate-mode)
 ; Temporarily disable sqlplus because is breaks --daemon
 ;;(vendor 'sqlplus)
-(vendor 'haml-mode)
-(vendor 'sass-mode)
 (vendor 'yaml-mode)
 ;(vendor 'erlang)
 (vendor 'rust-mode)
@@ -53,6 +48,12 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+
+;; magit
+(unless (package-installed-p 'magit)
+  (package-refresh-contents)
+  (package-install 'magit))
+
 
 ;; clojure-mode and paredit
 (unless (package-installed-p 'clojure-mode)

@@ -11,9 +11,6 @@ Clone this repo into `~/.emacs.d` then:
     touch config/custom.el
     git submodule init
     git submodule update
-    cd vendor/rinari
-    git submodule init
-    git submodule update
 
 
 Finally, create a file called `~/.emacs` and place the following line in it:
