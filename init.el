@@ -69,9 +69,9 @@
 (unless (package-installed-p 'go-mode)
   (package-refresh-contents)
   (package-install 'go-mode))
-(unless (package-installed-p 'go-autocomplete)
-  (package-refresh-contents)
-  (package-install 'go-autocomplete))
+;; (unless (package-installed-p 'go-autocomplete)
+;;   (package-refresh-contents)
+;;   (package-install 'go-autocomplete))
 (load "~/.emacs.d/config/golang")
 
 ;; flycheck

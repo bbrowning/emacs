@@ -13,7 +13,7 @@
 )
 (add-hook 'go-mode-hook 'go-mode-setup)
 
-(require 'auto-complete)
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-(ac-config-default)
+;; (require 'auto-complete)
+;; (require 'go-autocomplete)
+;; (require 'auto-complete-config)
+;; (ac-config-default)
