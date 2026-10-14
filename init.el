@@ -102,4 +102,4 @@
 ;; ugh electric indents
 ;(electric-indent-mode -1) ; globally
 ;; or
-(add-hook 'org-mode-hook (electric-indent-local-mode -1))
+(add-hook 'org-mode-hook (lambda () (electric-indent-local-mode -1)))
