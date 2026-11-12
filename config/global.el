@@ -8,7 +8,6 @@
 (setq vc-handled-backends (quote (SVN)))
 (cua-mode 0)
 (transient-mark-mode 1)
-(setq gist-view-gist t)
 (setq inhibit-startup-message t)
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; do not make backup files
@@ -19,7 +18,7 @@
 (setq ido-case-fold  t)
 (setq ido-enable-flex-matching t)
 ;;ignore some buffers
-(setq  ido-ignore-buffers  '("\\` " "^\*Mess" "^\*Back" "^\*Completions" "^\*Ido" "*fsm-debug" "*twittering-http"))
+(setq  ido-ignore-buffers  '("\\` " "^\*Mess" "^\*Back" "^\*Completions" "^\*Ido"))
 
 
 ;; works in both aquamacs and carbon
