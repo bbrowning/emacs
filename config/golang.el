@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 ; run gofmt before saving
 (defun go-mode-setup ()
   ; Use goimports instead of go-fmt

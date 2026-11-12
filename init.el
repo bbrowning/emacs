@@ -1,11 +1,16 @@
+;;; -*- lexical-binding: nil -*-
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (require 'cl)
 
 ; custom place to save customizations
 (setq custom-file "~/.emacs.d/config/custom.el")
-(load custom-file)
-
-(when (file-exists-p "~/.emacs.d/.passwords") (load "~/.emacs.d/.passwords"))
+;; These files are per-machine and gitignored, so there's no cookie to
+;; share through the repo.  Emacs 31+ warns about loaded files with no
+;; `lexical-binding' cookie; inhibit just that advisory while loading
+;; them.  (Their scope is still the default dynamic binding.)
+(let ((warning-inhibit-types '((files missing-lexbind-cookie))))
+  (load custom-file)
+  (when (file-exists-p "~/.emacs.d/.passwords") (load "~/.emacs.d/.passwords")))
 
 (load "~/.emacs.d/config/global")
 (load "~/.emacs.d/config/functions")

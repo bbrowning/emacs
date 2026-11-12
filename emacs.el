@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 (add-to-list 'load-path "~/.emacs.d")
 
 ;; You're expected to populate .emacs.d/local.el

@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 
 (add-hook 'twittering-mode-hook '(lambda()
 

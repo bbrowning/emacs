@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 ;; Swiped from defunkt's emacs config http://github.com/defunkt/emacs
 (global-set-key "\C-x\C-z" 'shell)      ; shortcut for shell
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)

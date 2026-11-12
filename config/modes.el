@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 ;; Swiped from defunkt's emacs config http://github.com/defunkt/emacs
 (load "~/.emacs.d/config/dired")
 (load "~/.emacs.d/config/shell")

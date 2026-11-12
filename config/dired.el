@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 ;; Swiped from defunkt's emacs config http://github.com/defunkt/emacs
 ; Dired
 (require 'dired)

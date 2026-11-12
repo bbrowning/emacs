@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 ;; Swiped from defunkt's emacs config http://github.com/defunkt/emacs
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)

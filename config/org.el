@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: nil -*-
 ;; Org-mode stuff
 (setq org-todo-keywords '("TODO" "WAITING" "DEFER" "DONE")) ;; (6)
 (setq org-log-done 'time)
