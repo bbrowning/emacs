@@ -15,34 +15,17 @@
 (load "~/.emacs.d/config/global")
 (load "~/.emacs.d/config/functions")
 (load "~/.emacs.d/config/modes")
-;;(load "~/.emacs.d/config/git")
 
-;;(vendor 'cheat)
-(vendor 'gist)
-;;(vendor 'twittering-mode)
 (vendor 'textile-mode)
-;;(vendor 'textmate)
 (vendor 'color-theme)
 (vendor 'vivid-chalk) 
-;;(vendor 'jabber)
-;;(vendor 'yasnippet)
-;;(textmate-mode)
-; Temporarily disable sqlplus because is breaks --daemon
-;;(vendor 'sqlplus)
 (vendor 'yaml-mode)
-;(vendor 'erlang)
 (vendor 'rust-mode)
 
 (load "~/.emacs.d/config/theme")
-;;(load "~/.emacs.d/config/jabber")
 (load "~/.emacs.d/config/org")
-;;(load "~/.emacs.d/config/twitter")
 (load "~/.emacs.d/config/javascript")
-(load "~/.emacs.d/config/sqlplus")
 (load "~/.emacs.d/config/rust")
-
-;;(yas/initialize)
-;;(yas/load-directory "~/.emacs.d/snippets")
 
 ;; Marmalade package repo
 (require 'package)
